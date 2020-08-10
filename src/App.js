@@ -24,12 +24,12 @@ class App extends Component {
         <table>
           {
             this.header.map((item, index) =>
-              <Header key={index} col1={item.col1} col2={item.col2} col3={item.col3}/>
+              <Header key={index} item={item}/>
             )
           }
           {
             this.image.map((item, index) =>
-              <Image key={index} url1={item.col1} url2={item.col2} url3={item.col3}/>
+              <Image key={index} item={item}/>
             )
           }
         </table>
